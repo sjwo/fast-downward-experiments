@@ -1,11 +1,6 @@
 name: fd-exps
-channels:
-  # for parallel
-  # - conda-forge
 dependencies:
   - python 3.9.*
-  # - parallel
   - pip
-  # - GitPython
   - pip:
-    - lab==7.1
+    - --editable=git+ssh://git@github.ibm.com/sjw/lab.git#egg=lab
